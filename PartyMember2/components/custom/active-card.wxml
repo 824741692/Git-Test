@@ -1,0 +1,11 @@
+<!--components/custom/active-card.wxml-->
+<!-- 卡片 -->
+<view class="newCard" bind:tap="goTo">
+    <!-- 活动标题 -->
+    <view class="title">{{title}}</view>
+    <!-- 活动图片 -->
+    <view class="newImage">
+        <image mode="aspectFill" src="{{src}}"></image>
+    </view>
+</view>
+<!-- 活动卡片结束 -->

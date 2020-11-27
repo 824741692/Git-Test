@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "活动",
+    "usingComponents": {
+        "van-tabs": "/dist/tabs/index",
+        "van-tab": "/dist/tab/index",
+        "active-card": "/components/custom/active-card"
+    }
+}

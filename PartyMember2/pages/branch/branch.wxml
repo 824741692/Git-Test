@@ -1,0 +1,51 @@
+<view>
+    <!-- 背景图 -->
+    <image src='/images/bg (1).jpeg' mode="scaleToFill" class="bg-img" />
+    <!-- 菜单栏 -->
+    <view class="nav">
+        <navigator wx:for="{{menus}}" url="{{item.url}}" wx:key="index" class="nav-item">
+            <view>
+                <view class="icon">
+                    <image src="{{item.icon}}"></image>
+                </view>
+                <view class="text">{{item.title}}</view>
+            </view>
+        </navigator>
+    </view>
+    <!-- 使用colorui样式的菜单栏 -->
+    <!-- <view class="padding flex text-center text-grey bg-white shadow-warp">
+      <view wx:for="{{gongGeList}}" wx:key="index" data-url="{{item.url}}" bindtap="toList"
+        class="flex flex-sub flex-direction {{index == gongGeList.length-1 ? '' : 'solid-right'}}">
+        <view class="text-xxl {{item.iconClass}}">
+          <text class="{{item.icon}}"></text>
+        </view>
+        <view class="margin-top-sm">{{item.title}}</view>
+      </view>
+    </view> -->
+    <!-- Tab切换 -->
+    <view class="box">
+        <van-tabs active="{{tabActive}}" color="#53cac3">
+            <!-- 全部 -->
+            <van-tab title="全部">
+                <van-cell-group>
+                    <van-cell title="目前总分">
+                        <view slot="right-icon">
+                            <view style="color: #53cac3;">{{totalScore}}</view>
+                        </view>
+                    </van-cell>
+                </van-cell-group>
+                <van-cell-group>
+                    <van-cell wx:for="{{scoreList}}" wx:key="index" title="{{item.name}}">
+                        <view slot="right-icon">
+                            <view style="color: #53cac3;">{{item.score}}</view>
+                        </view>
+                    </van-cell>
+                </van-cell-group>
+            </van-tab>
+            <!-- 领取 -->
+            <van-tab title="领取"></van-tab>
+            <!-- 得分 -->
+            <van-tab title="得分"></van-tab>
+        </van-tabs>
+    </view>
+</view>

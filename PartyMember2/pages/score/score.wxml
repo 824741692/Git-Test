@@ -1,0 +1,11 @@
+<view class="scorecontainer" wx:for="{{menus}}" wx:key="index">
+    <text class="menu">{{item.menuName}}</text>
+    <view class="cardcontainer">
+        <navigator class="card" hover-class="none" wx:for="{{item.menuItem}}" wx:for-item="m" url="{{m.url}}" wx:key="index">
+            <view class="img">
+                <image class="cardimg" src="{{m.icon}}" />
+            </view>
+            <view class="name">{{m.name}}</view>
+        </navigator>
+    </view>
+</view>

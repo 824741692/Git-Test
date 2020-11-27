@@ -1,0 +1,27 @@
+<!--pages/user/user.wxml-->
+<view class="cu-avatar"></view>
+<view class="bg-blue">
+    <view class="flex solid-bottom justify-center">
+        <view class="bg-write margin-xs radius">
+            <van-image
+            round
+            width="75px"
+            height="75px"
+            src="https://img.yzcdn.cn/vant/cat.jpeg"
+            />
+        </view>
+    </view>
+    <view class="flex solid-bottom padding-sm justify-center">未绑定学(工)号</view>
+</view>
+
+<view class="van-hairline--surround">
+    <van-cell-group>
+        <van-cell label="绑定学（工）号" is-link />
+        <van-cell label="走访宿舍情况" is-link />
+        <van-cell label="我为标杆院系建设出点子" is-link />
+        <van-cell label="日行一善" is-link />
+        <van-cell label="学习强国" is-link />
+        <van-cell label="积分详情" is-link />
+        <van-cell label="意见反馈" is-link />
+    </van-cell-group>
+</view>

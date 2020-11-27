@@ -1,0 +1,74 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/activity/activity",
+        "pages/user/user",
+        "pages/branch/branch",
+        "pages/study/study",
+        "pages/score/score",
+        "pages/web/web",
+        "pages/share/share"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#53cac3",
+        "navigationBarTitleText": "支部",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "backgroundColor": "#ffffff",
+        "color": "#5c5c5c",
+        "selectedColor": "#53cac3",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "支部",
+                "iconPath": "images/organization.png",
+                "selectedIconPath": "images/organization_cur.png"
+            },
+            {
+                "pagePath": "pages/study/study",
+                "text": "思政课堂",
+                "iconPath": "images/study.png",
+                "selectedIconPath": "images/study_cur.png"
+            },
+            {
+                "pagePath": "pages/branch/branch",
+                "text": "素质肖像",
+                "iconPath": "images/heart.png",
+                "selectedIconPath": "images/heart_cur.png"
+            },
+            {
+                "pagePath": "pages/activity/activity",
+                "text": "活动思政",
+                "iconPath": "images/activity.png",
+                "selectedIconPath": "images/activity_cur.png"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "我的",
+                "iconPath": "images/me.png",
+                "selectedIconPath": "images/me_cur.png"
+            }
+        ]
+    },
+    "networkTimeout": {
+        "request": 60000,
+        "connectSocket": 60000,
+        "uploadFile": 60000,
+        "downloadFile": 60000
+    },
+    "debug": true,
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "plugins": {
+        "routePlan": {
+            "version": "1.0.8",
+            "provider": "wx50b5593e81dd937a"
+        }
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序定位"
+        }
+    }
+}

@@ -1,0 +1,7 @@
+<!--pages/study/study.wxml-->
+<van-tabs active="{{ active }}" bind:change="onChange">
+  <van-tab title="校内文件">内容 1</van-tab>
+  <van-tab title="习近平讲话">内容 2</van-tab>
+  <van-tab title="党员党章">内容 3</van-tab>
+  <van-tab title="每日一学">内容 4</van-tab>
+</van-tabs>

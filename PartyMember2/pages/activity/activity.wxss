@@ -1,0 +1,5 @@
+/* pages/activity/activity.wxss */
+
+.mytab {
+    margin: 30rpx 20rpx 5rpx 20rpx;
+}

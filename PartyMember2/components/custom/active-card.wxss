@@ -1,0 +1,27 @@
+/* components/custom/active-card.wxss */
+
+.newCard {
+    background-color: #ffffff;
+    border-radius: 8rpx;
+    margin: 35rpx;
+    padding: 20rpx 20rpx;
+    /* 高度，使用相对的单位 */
+}
+
+.title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.newImage {
+    background-color: rgb(207, 206, 206);
+    height: 400rpx;
+    border-radius: 8rpx;
+    overflow: hidden;
+    margin: 10rpx 0;
+}
+
+.newCard .newImage image {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "支部",
+    "usingComponents": {
+        "van-tabs": "/dist/tabs/index",
+        "van-tab": "/dist/tab/index",
+        "van-cell": "/dist/cell/index",
+        "van-cell-group": "/dist/cell-group/index"
+    }
+}

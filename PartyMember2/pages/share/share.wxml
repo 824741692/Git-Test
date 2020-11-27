@@ -1,0 +1,5 @@
+<!--pages/share/share.wxml-->
+<image style="margin-bottom: 50px;" src="/images/qrcode.png" />
+<view id="save">
+    <van-button type="primary" block bindtap="saveImage">保存</van-button>
+</view>
